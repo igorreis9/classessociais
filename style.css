@@ -1,0 +1,90 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4;
+}
+
+#alta,
+#media,
+#baixa {
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 80px;
+}
+
+/* Pseudoelemento aplicado ao h1 adicionando conteúdo antes */
+
+h1::before {
+    content: "Tema: ";
+    font-weight: 900;
+    color: #E67E22;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: #2C3E50;
+    padding: 6px;
+}
+
+nav ul li {
+    margin: 0 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #27AE60;
+    padding: 10px;
+    display: flex;
+    transition: background-color 0.5s;
+    border-radius: 20px;
+}
+
+nav ul li a:hover {
+    background-color: #27ae5f66;
+    border-radius: 20px;
+
+}
+
+nav ul li a:active {
+    background-color: #27ae5f66;
+}
+
+nav ul li a:visited {
+    color: #27ae5f66;
+}
+
+p::first-letter {
+    font-size: 1.5em;
+}
+
+img {
+    max-width: 340px;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 480px) {
+    #alta,
+    #media,
+    #baixa {
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-bottom: 80px;
+    }
+
+    nav ul li a{
+        padding: 1px;
+    }
+
+
+
+}
